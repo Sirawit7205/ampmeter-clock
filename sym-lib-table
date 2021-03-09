@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ampmeter_clock)(type Legacy)(uri ${KIPRJMOD}/ampmeter_clock.lib)(options "")(descr ""))
+)
