@@ -767,63 +767,6 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf" 
 	2    8250 13500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 61E12550
-P 2950 4600
-F 0 "R20" H 3009 4646 50  0000 L CNN
-F 1 "4k7" H 3009 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 4600 50  0001 C CNN
-F 3 "~" H 2950 4600 50  0001 C CNN
-	1    2950 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 61E12556
-P 2950 4800
-F 0 "#PWR020" H 2950 4550 50  0001 C CNN
-F 1 "GND" H 2955 4627 50  0000 C CNN
-F 2 "" H 2950 4800 50  0001 C CNN
-F 3 "" H 2950 4800 50  0001 C CNN
-	1    2950 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4400 2950 4400
-Wire Wire Line
-	2950 4400 2950 4500
-Connection ~ 2950 4400
-Wire Wire Line
-	2950 4700 2950 4750
-$Comp
-L Device:R_Small R25
-U 1 1 61E24A80
-P 2950 6200
-F 0 "R25" H 3009 6246 50  0000 L CNN
-F 1 "4k7" H 3009 6155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 6200 50  0001 C CNN
-F 3 "~" H 2950 6200 50  0001 C CNN
-	1    2950 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 61E24A86
-P 2950 6400
-F 0 "#PWR026" H 2950 6150 50  0001 C CNN
-F 1 "GND" H 2955 6227 50  0000 C CNN
-F 2 "" H 2950 6400 50  0001 C CNN
-F 3 "" H 2950 6400 50  0001 C CNN
-	1    2950 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6000 2950 6000
-Wire Wire Line
-	2950 6000 2950 6100
-Wire Wire Line
-	2950 6300 2950 6350
 Text GLabel 5350 7400 2    50   Output ~ 0
 RST
 $Comp
@@ -2803,53 +2746,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 3600 1255
 	7    3600 12550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C14
-U 1 1 642DB7D6
-P 3350 4600
-F 0 "C14" H 3442 4646 50  0000 L CNN
-F 1 "1uF" H 3442 4555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 4600 50  0001 C CNN
-F 3 "~" H 3350 4600 50  0001 C CNN
-	1    3350 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 4400 3350 4500
-Wire Wire Line
-	2950 4400 3350 4400
-Wire Wire Line
-	3350 4400 3650 4400
-Connection ~ 3350 4400
-Wire Wire Line
-	3350 4700 3350 4750
-Wire Wire Line
-	3350 4750 2950 4750
-Connection ~ 2950 4750
-Wire Wire Line
-	2950 4750 2950 4800
-$Comp
-L Device:C_Small C15
-U 1 1 643C0F17
-P 3350 6200
-F 0 "C15" H 3442 6246 50  0000 L CNN
-F 1 "1uF" H 3442 6155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 6200 50  0001 C CNN
-F 3 "~" H 3350 6200 50  0001 C CNN
-	1    3350 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 6000 3350 6100
-Wire Wire Line
-	2950 6000 3350 6000
-Wire Wire Line
-	3350 6000 3650 6000
-Connection ~ 3350 6000
-Wire Wire Line
-	3350 6300 3350 6350
-Wire Wire Line
-	3350 6350 2950 6350
 Wire Wire Line
 	3350 7400 3350 7500
 Wire Wire Line
@@ -2863,10 +2759,6 @@ Wire Wire Line
 	3350 7750 2950 7750
 Wire Wire Line
 	4250 7400 4300 7400
-Connection ~ 2950 6000
-Connection ~ 2950 6350
-Wire Wire Line
-	2950 6350 2950 6400
 Connection ~ 2950 7400
 Connection ~ 2950 7750
 Wire Wire Line
@@ -3575,17 +3467,6 @@ F 3 "~" H 2450 14310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
-U 1 1 61152B2C
-P 2600 6000
-F 0 "SW2" H 2600 6285 50  0000 C CNN
-F 1 "SET_HOUR" H 2600 6194 50  0000 C CNN
-F 2 "TS-1101:TS-1101" H 2600 6200 50  0001 C CNN
-F 3 "~" H 2600 6200 50  0001 C CNN
-	1    2600 6000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW3
 U 1 1 6115307E
 P 2600 7400
@@ -3641,17 +3522,6 @@ Wire Wire Line
 	1800 4250 1800 4400
 Wire Wire Line
 	1800 4400 2400 4400
-$Comp
-L Switch:SW_Push SW1
-U 1 1 61150646
-P 2600 4400
-F 0 "SW1" H 2600 4685 50  0000 C CNN
-F 1 "SET_MIN" H 2600 4594 50  0000 C CNN
-F 2 "TS-1101:TS-1101" H 2600 4600 50  0001 C CNN
-F 3 "~" H 2600 4600 50  0001 C CNN
-	1    2600 4400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D8
 U 1 1 612FA1DF
@@ -4343,4 +4213,134 @@ Wire Wire Line
 	18750 4400 18850 4400
 Text Notes 5100 14650 0    50   ~ 0
 RE1CM471F12PT
+$Comp
+L Device:R_Small R25
+U 1 1 61E24A80
+P 2950 4600
+F 0 "R25" H 3009 4646 50  0000 L CNN
+F 1 "4k7" H 3009 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 4600 50  0001 C CNN
+F 3 "~" H 2950 4600 50  0001 C CNN
+	1    2950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 61E24A86
+P 2950 4800
+F 0 "#PWR026" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2955 4627 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4400 2950 4400
+Wire Wire Line
+	2950 4400 2950 4500
+Wire Wire Line
+	2950 4700 2950 4750
+$Comp
+L Device:C_Small C15
+U 1 1 643C0F17
+P 3350 4600
+F 0 "C15" H 3442 4646 50  0000 L CNN
+F 1 "1uF" H 3442 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 4600 50  0001 C CNN
+F 3 "~" H 3350 4600 50  0001 C CNN
+	1    3350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4400 3350 4500
+Wire Wire Line
+	2950 4400 3350 4400
+Wire Wire Line
+	3350 4400 3650 4400
+Connection ~ 3350 4400
+Wire Wire Line
+	3350 4700 3350 4750
+Wire Wire Line
+	3350 4750 2950 4750
+Connection ~ 2950 4400
+Connection ~ 2950 4750
+Wire Wire Line
+	2950 4750 2950 4800
+$Comp
+L Switch:SW_Push SW2
+U 1 1 61152B2C
+P 2600 4400
+F 0 "SW2" H 2600 4685 50  0000 C CNN
+F 1 "SET_MIN" H 2600 4594 50  0000 C CNN
+F 2 "TS-1101:TS-1101" H 2600 4600 50  0001 C CNN
+F 3 "~" H 2600 4600 50  0001 C CNN
+	1    2600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 61E12550
+P 2950 6200
+F 0 "R20" H 3009 6246 50  0000 L CNN
+F 1 "4k7" H 3009 6155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 6200 50  0001 C CNN
+F 3 "~" H 2950 6200 50  0001 C CNN
+	1    2950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 61E12556
+P 2950 6400
+F 0 "#PWR020" H 2950 6150 50  0001 C CNN
+F 1 "GND" H 2955 6227 50  0000 C CNN
+F 2 "" H 2950 6400 50  0001 C CNN
+F 3 "" H 2950 6400 50  0001 C CNN
+	1    2950 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6000 2950 6000
+Wire Wire Line
+	2950 6000 2950 6100
+Connection ~ 2950 6000
+Wire Wire Line
+	2950 6300 2950 6350
+$Comp
+L Device:C_Small C14
+U 1 1 642DB7D6
+P 3350 6200
+F 0 "C14" H 3442 6246 50  0000 L CNN
+F 1 "1uF" H 3442 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 6200 50  0001 C CNN
+F 3 "~" H 3350 6200 50  0001 C CNN
+	1    3350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6000 3350 6100
+Wire Wire Line
+	2950 6000 3350 6000
+Wire Wire Line
+	3350 6000 3650 6000
+Connection ~ 3350 6000
+Wire Wire Line
+	3350 6300 3350 6350
+Wire Wire Line
+	3350 6350 2950 6350
+Connection ~ 2950 6350
+Wire Wire Line
+	2950 6350 2950 6400
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61150646
+P 2600 6000
+F 0 "SW1" H 2600 6285 50  0000 C CNN
+F 1 "SET_HOUR" H 2600 6194 50  0000 C CNN
+F 2 "TS-1101:TS-1101" H 2600 6200 50  0001 C CNN
+F 3 "~" H 2600 6200 50  0001 C CNN
+	1    2600 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
