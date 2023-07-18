@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 4060
+D 14-Stage Ripple Counter and Oscillator
+$ENDCMP
+#
+$CMP 4516
+D Binary Presettable Up/Down Counter
+$ENDCMP
+#
+$CMP NCE30P12S
+D -12A Id, -30V Vds, P-Channel MOSFET, SOIC-8
+K -12A Id, -30V Vds, P-Channel MOSFET, SOIC-8
+F https://datasheet.lcsc.com/szlcsc/1810251712_Wuxi-NCE-Power-Semiconductor-NCE30P12S_C167515.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -30,3 +30,10 @@ fp-info-cache
 
 #proteus simulations
 simulation
+
+#gerber output
+gerber
+gerbers
+
+#folder customization
+desktop.ini
