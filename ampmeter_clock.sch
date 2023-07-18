@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Ampmeter Clock"
 Date "2021-03-04"
-Rev "1"
+Rev "2"
 Comp "Sleepy Pony Labs"
 Comment1 ""
 Comment2 ""
